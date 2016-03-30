@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WatchOSDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhh-hE-ImO">
+                                <rect key="frame" x="226" y="152" width="148" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="My Balance"/>
+                                <connections>
+                                    <action selector="balance:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6sD-29-0rg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qhh-hE-ImO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="136" id="7wL-Mb-5Kt"/>
+                            <constraint firstItem="Qhh-hE-ImO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RkC-vL-VV1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="297" y="339"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="4l1-Ya-0yY">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" title="Login" modalTransitionStyle="crossDissolve" id="KIb-9y-B8c" customClass="LoginViewController" customModule="WatchOSDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="clS-1Z-23b"/>
+                        <viewControllerLayoutGuide type="bottom" id="m6D-Iz-Nuc"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="ec4-EM-uVA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUf-T0-xDE">
+                                <rect key="frame" x="261" y="193" width="78" height="51"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                </variation>
+                                <connections>
+                                    <action selector="login:" destination="KIb-9y-B8c" eventType="touchUpInside" id="UHT-Wv-c5p"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i5w-aa-ZcS">
+                                <rect key="frame" x="73" y="117" width="454" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FV0-0D-wEB">
+                                <rect key="frame" x="73" y="155" width="454" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please try again" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryV-sT-7VQ">
+                                <rect key="frame" x="53" y="252" width="494" height="39"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="1" green="0.082320259039999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i5w-aa-ZcS" firstAttribute="top" secondItem="clS-1Z-23b" secondAttribute="bottom" constant="53" id="4nz-ZQ-PjZ"/>
+                            <constraint firstItem="i5w-aa-ZcS" firstAttribute="leading" secondItem="ec4-EM-uVA" secondAttribute="leadingMargin" constant="53" id="DL0-KQ-sZx"/>
+                            <constraint firstAttribute="centerX" secondItem="ryV-sT-7VQ" secondAttribute="centerX" id="Hdb-Rd-9Da"/>
+                            <constraint firstItem="ryV-sT-7VQ" firstAttribute="top" secondItem="cUf-T0-xDE" secondAttribute="bottom" constant="8" id="Hj3-gu-hpM"/>
+                            <constraint firstItem="cUf-T0-xDE" firstAttribute="top" secondItem="FV0-0D-wEB" secondAttribute="bottom" constant="8" id="KNY-mi-fzu"/>
+                            <constraint firstItem="FV0-0D-wEB" firstAttribute="top" secondItem="i5w-aa-ZcS" secondAttribute="bottom" constant="8" id="Miz-oV-0Rf"/>
+                            <constraint firstAttribute="centerX" secondItem="i5w-aa-ZcS" secondAttribute="centerX" id="Pc0-TY-fS2"/>
+                            <constraint firstAttribute="centerX" secondItem="cUf-T0-xDE" secondAttribute="centerX" id="fF6-Kz-Wvb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i5w-aa-ZcS" secondAttribute="trailing" constant="53" id="ifI-Wk-eSv"/>
+                            <constraint firstItem="ryV-sT-7VQ" firstAttribute="leading" secondItem="ec4-EM-uVA" secondAttribute="leadingMargin" constant="33" id="jUw-xt-d8g"/>
+                            <constraint firstAttribute="centerX" secondItem="FV0-0D-wEB" secondAttribute="centerX" id="l12-zc-qiw"/>
+                            <constraint firstItem="FV0-0D-wEB" firstAttribute="leading" secondItem="ec4-EM-uVA" secondAttribute="leadingMargin" constant="53" id="l2E-ed-9Ff"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FV0-0D-wEB" secondAttribute="trailing" constant="53" id="x7i-dd-096"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ryV-sT-7VQ" secondAttribute="trailing" constant="33" id="zti-MS-8ho"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Form Based Authentication" id="gbW-Me-mWJ"/>
+                    <connections>
+                        <outlet property="errorMsg" destination="ryV-sT-7VQ" id="GKw-8y-5BL"/>
+                        <outlet property="password" destination="FV0-0D-wEB" id="dzJ-uB-Iia"/>
+                        <outlet property="username" destination="i5w-aa-ZcS" id="JkT-c9-fg8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9dR-TQ-cuz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="965" y="346"/>
+        </scene>
+    </scenes>
+</document>

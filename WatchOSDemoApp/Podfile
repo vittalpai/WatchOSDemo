@@ -1,0 +1,13 @@
+
+xcodeproj 'WatchOSDemoApp'
+
+use_frameworks!
+
+target :WatchOSDemoApp do
+    platform :ios, 9.0
+    pod 'IBMMobileFirstPlatformFoundation'
+end
+target :'WatchOSDemoApp WatchKit Extension' do
+    platform :watchos, 2.0
+    pod 'IBMMobileFirstPlatformFoundation'
+end
