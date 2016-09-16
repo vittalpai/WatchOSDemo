@@ -9,7 +9,7 @@
 import Foundation
 import IBMMobileFirstPlatformFoundationWatchOS
 
-class MyPinCodeChallengeHandler : WLChallengeHandler {
+class MyPinCodeChallengeHandler : SecurityCheckChallengeHandler {
     
     var ic : InterfaceController
     

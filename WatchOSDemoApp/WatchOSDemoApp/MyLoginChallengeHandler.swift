@@ -9,7 +9,7 @@
 import Foundation
 import IBMMobileFirstPlatformFoundation
 
-class MyLoginChallengeHandler : WLChallengeHandler {
+class MyLoginChallengeHandler : SecurityCheckChallengeHandler {
     
     var vc : ViewController
     
