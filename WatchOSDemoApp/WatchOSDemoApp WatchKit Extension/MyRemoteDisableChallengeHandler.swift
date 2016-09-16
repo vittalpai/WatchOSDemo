@@ -10,7 +10,7 @@ import Foundation
 import WatchKit
 import IBMMobileFirstPlatformFoundationWatchOS
 
-class MyRemoteDisableChallengeHandler : WLChallengeHandler {
+class MyRemoteDisableChallengeHandler : SecurityCheckChallengeHandler {
     
     var ic : InterfaceController
     var messageId : String?

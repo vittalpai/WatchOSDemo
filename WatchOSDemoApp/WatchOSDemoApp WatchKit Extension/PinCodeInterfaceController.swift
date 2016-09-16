@@ -42,7 +42,7 @@ class PinCodeInterfaceController : WKInterfaceController {
     
     override func willDisappear() {
         if (!didSendPinCode) {
-            self.challengeHandler.submitFailure(nil)
+            self.challengeHandler.cancel()
             self.challengeHandler.isFirstTime = true
         }
         super.willDisappear()
