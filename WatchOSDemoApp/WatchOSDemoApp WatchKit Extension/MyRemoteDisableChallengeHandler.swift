@@ -21,43 +21,43 @@ class MyRemoteDisableChallengeHandler : SecurityCheckChallengeHandler {
     }
     
     //Blocking an application
-    override func handleFailure(failure: [NSObject : AnyObject]!) {
-        let message = failure["message"] as! String
+    override func handleFailure(_ failure: [AnyHashable : Any]!) {
+        let message = failure!["message"] as! String
         
-        let act : WKAlertAction = WKAlertAction(title: "OK", style: WKAlertActionStyle.Default, handler: { () -> Void in
+        let act : WKAlertAction = WKAlertAction(title: "OK", style: WKAlertActionStyle.default, handler: { () -> Void in
             
         })
         let actions : [WKAlertAction] = [act];
         
-        ic.presentAlertControllerWithTitle("Application Disabled", message: message, preferredStyle: WKAlertControllerStyle.Alert, actions: actions)
+        ic.presentAlert(withTitle: "Application Disabled", message: message, preferredStyle: WKAlertControllerStyle.alert, actions: actions)
         
         ic.isRemoteDisabled = true
     }
     
     //Notifying an application
-    override func handleChallenge(challenge: [NSObject : AnyObject]!) {
+    override func handleChallenge(_ challenge: [AnyHashable : Any]!) {
         let message = challenge["message"] as! String
         let msgId = challenge["messageId"] as! String
         
         self.messageId = msgId;
     
-        let act : WKAlertAction = WKAlertAction(title: "OK", style: WKAlertActionStyle.Cancel, handler: { () -> Void in
+        let act : WKAlertAction = WKAlertAction(title: "OK", style: WKAlertActionStyle.cancel, handler: { () -> Void in
             self.submitAnswer()
             if (self.ic.pinCodeScreenShouldBeDisplayed) {
                 var contextDictionary = [String:AnyObject]()
                 contextDictionary["challengeHandler"] = self.ic.pinCodeChallengeHandler
-                contextDictionary["firstTime"] = true
-                self.ic.pushControllerWithName("PinCodeController", context: contextDictionary)
+                contextDictionary["firstTime"] = true as AnyObject
+                self.ic.pushController(withName: "PinCodeController", context: contextDictionary)
             }
         })
         let actions : [WKAlertAction] = [act];
         
-        ic.presentAlertControllerWithTitle("Notification", message: message, preferredStyle: WKAlertControllerStyle.Alert, actions: actions)
+        ic.presentAlert(withTitle: "Notification", message: message, preferredStyle: WKAlertControllerStyle.alert, actions: actions)
     }
     
     
     func submitAnswer() {
-        var answerDict : [NSObject : AnyObject] = [NSObject : AnyObject]()
+        var answerDict : [AnyHashable : Any] = [AnyHashable : Any]()
         answerDict["messageId"] = self.messageId
         self.submitChallengeAnswer(answerDict)
     }

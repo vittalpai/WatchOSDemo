@@ -20,23 +20,23 @@ class MyPinCodeChallengeHandler : SecurityCheckChallengeHandler {
         super.init(securityCheck: "pinCode")
     }
     
-    override func handleSuccess(success: [NSObject : AnyObject]!) {
+    override func handleSuccess(_ success: [AnyHashable : Any]!) {
         NSLog("Challenge success");
-        isFirstTime = true
-        self.ic.popController()
+               isFirstTime = true
+               self.ic.pop()
     }
     
-    override func handleFailure(failure: [NSObject : AnyObject]!) {
+    override func handleFailure(_ failure: [AnyHashable : Any]!) {
         NSLog("Challenge failed");
     }
     
-    override func handleChallenge(challenge: [NSObject : AnyObject]!) {
+    override func handleChallenge(_ challenge: [AnyHashable : Any]!) {
         NSLog("A pin code screen should appear");
         var contextDictionary = [String:AnyObject]()
         contextDictionary["challengeHandler"] = self
-        contextDictionary["firstTime"] = isFirstTime
+        contextDictionary["firstTime"] = isFirstTime as AnyObject
         
-        self.ic.pushControllerWithName("PinCodeController", context: contextDictionary)
+        self.ic.pushController(withName: "PinCodeController", context: contextDictionary)
         self.ic.pinCodeScreenShouldBeDisplayed = true
         self.ic.pinCodeChallengeHandler = self
         isFirstTime = false

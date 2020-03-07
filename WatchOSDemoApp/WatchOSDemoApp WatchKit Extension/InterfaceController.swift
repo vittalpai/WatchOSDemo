@@ -28,8 +28,8 @@ class InterfaceController: WKInterfaceController {
         self.activityIndicatorImage.setHidden(true)
     }
     
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?)  {
+        super.awake(withContext: context)
         WLClient.sharedInstance().registerChallengeHandler(MyPinCodeChallengeHandler(ic: self))
         WLClient.sharedInstance().registerChallengeHandler(MyRemoteDisableChallengeHandler(ic:self))
     
@@ -50,25 +50,25 @@ class InterfaceController: WKInterfaceController {
     @IBAction func balance() {
         let address : String = "/adapters/bankAdapter/view/balance";
         let url : NSURL = NSURL(string: address)!
-        let request : WLResourceRequest = WLResourceRequest(URL: url, method: WLHttpMethodGet);
+        let request : WLResourceRequest = WLResourceRequest(url: url as URL, method: WLHttpMethodGet);
         
         self.showActivityIndicator()
-        
-        request.sendWithCompletionHandler { (response:WLResponse!, error:NSError!) -> Void in
+       
+        request.send(completionHandler: {  (response, error) in
             var title : String;
             var message : String;
             if((error) != nil){
                 title = "Error";
-                message = error.description;
-                NSLog("Adapter invocation failure. Error: %@", error);
+                message = error!.localizedDescription;
+                print("Adapter invocation failure. Error: %@", error);
             }
             else{
                 title = "Balance";
-                let balance = response.getResponseJson()["balance"]!
+                let balance = response!.getJson()["balance"]!
                 message = "Your balance is \(balance)$"
             }
             
-            let act : WKAlertAction = WKAlertAction(title: "OK", style: WKAlertActionStyle.Default, handler: { () -> Void in
+            let act : WKAlertAction = WKAlertAction(title: "OK", style: WKAlertActionStyle.default, handler: { () -> Void in
                 
             })
             let actions : [WKAlertAction] = [act];
@@ -77,12 +77,12 @@ class InterfaceController: WKInterfaceController {
             
             //If remote disabled, we showed error message already in MyRemoteDisableChallengeHandler
             if (!self.isRemoteDisabled) {
-                self.presentAlertControllerWithTitle(title, message: message, preferredStyle: WKAlertControllerStyle.Alert, actions: actions)
+                self.presentAlert(withTitle: title, message: message, preferredStyle: WKAlertControllerStyle.alert, actions: actions)
             }
             else {
                 self.isRemoteDisabled = false;
             }
-        }
+        })
         
     }
     

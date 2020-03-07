@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9F3421A9A8E1CC003EF66CF /* Pods_WatchOSDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41DBDA7F545D2278093238CD /* Pods_WatchOSDemoApp.framework */; };
 		D22D7F151C7A02CD000BE63D /* MyRemoteDisableChallengeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D7F141C7A02CD000BE63D /* MyRemoteDisableChallengeHandler.swift */; };
 		D2343D401C4CFABA00697D6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2343D3F1C4CFABA00697D6E /* AppDelegate.swift */; };
 		D2343D471C4CFABA00697D6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2343D461C4CFABA00697D6E /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		D2343D8B1C4CFB5F00697D6E /* PinCodeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2343D8A1C4CFB5F00697D6E /* PinCodeInterfaceController.swift */; };
 		D2343DB51C4F811D00697D6E /* mfpclient.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2343DB41C4F811D00697D6E /* mfpclient.plist */; };
 		D2343DB61C4F811D00697D6E /* mfpclient.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2343DB41C4F811D00697D6E /* mfpclient.plist */; };
+		FA7B57F020507ABB11110389 /* Pods_WatchOSDemoApp_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCA9EB59096649EC4B35774 /* Pods_WatchOSDemoApp_WatchKit_Extension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3FCA9EB59096649EC4B35774 /* Pods_WatchOSDemoApp_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchOSDemoApp_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41DBDA7F545D2278093238CD /* Pods_WatchOSDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchOSDemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FCC60D85A4D0D79EC1C2760 /* Pods-WatchOSDemoApp WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchOSDemoApp WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-WatchOSDemoApp WatchKit Extension/Pods-WatchOSDemoApp WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		72AE23359AA80065F8B9DE26 /* Pods-WatchOSDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchOSDemoApp.debug.xcconfig"; path = "Target Support Files/Pods-WatchOSDemoApp/Pods-WatchOSDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9CC7DDCFBD01B59B9BAFCD24 /* Pods-WatchOSDemoApp WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchOSDemoApp WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-WatchOSDemoApp WatchKit Extension/Pods-WatchOSDemoApp WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		D22D7F141C7A02CD000BE63D /* MyRemoteDisableChallengeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRemoteDisableChallengeHandler.swift; sourceTree = "<group>"; };
 		D2343D3C1C4CFABA00697D6E /* WatchOSDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchOSDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2343D3F1C4CFABA00697D6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +103,7 @@
 		D2343D881C4CFB5700697D6E /* MyPinCodeChallengeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPinCodeChallengeHandler.swift; sourceTree = "<group>"; };
 		D2343D8A1C4CFB5F00697D6E /* PinCodeInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeInterfaceController.swift; sourceTree = "<group>"; };
 		D2343DB41C4F811D00697D6E /* mfpclient.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mfpclient.plist; sourceTree = "<group>"; };
+		ECF9EDE996DE305AA9237928 /* Pods-WatchOSDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchOSDemoApp.release.xcconfig"; path = "Target Support Files/Pods-WatchOSDemoApp/Pods-WatchOSDemoApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +111,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9F3421A9A8E1CC003EF66CF /* Pods_WatchOSDemoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D2343D5A1C4CFABB00697D6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7B57F020507ABB11110389 /* Pods_WatchOSDemoApp_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB57898B2F96E2029257DD9E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -116,6 +133,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EFEE5CAC3E64F8FE93B9315 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41DBDA7F545D2278093238CD /* Pods_WatchOSDemoApp.framework */,
+				3FCA9EB59096649EC4B35774 /* Pods_WatchOSDemoApp_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BABF246CEBD545C8DAE01A18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72AE23359AA80065F8B9DE26 /* Pods-WatchOSDemoApp.debug.xcconfig */,
+				ECF9EDE996DE305AA9237928 /* Pods-WatchOSDemoApp.release.xcconfig */,
+				9CC7DDCFBD01B59B9BAFCD24 /* Pods-WatchOSDemoApp WatchKit Extension.debug.xcconfig */,
+				4FCC60D85A4D0D79EC1C2760 /* Pods-WatchOSDemoApp WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D2343D331C4CFABA00697D6E = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +161,8 @@
 				D2343D521C4CFABB00697D6E /* WatchOSDemoApp WatchKit App */,
 				D2343D611C4CFABB00697D6E /* WatchOSDemoApp WatchKit Extension */,
 				D2343D3D1C4CFABA00697D6E /* Products */,
+				BABF246CEBD545C8DAE01A18 /* Pods */,
+				3EFEE5CAC3E64F8FE93B9315 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -193,10 +232,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2343D771C4CFABB00697D6E /* Build configuration list for PBXNativeTarget "WatchOSDemoApp" */;
 			buildPhases = (
+				26B753A2038DBB008532070B /* [CP] Check Pods Manifest.lock */,
 				D2343D381C4CFABA00697D6E /* Sources */,
 				D2343D391C4CFABA00697D6E /* Frameworks */,
 				D2343D3A1C4CFABA00697D6E /* Resources */,
 				D2343D761C4CFABB00697D6E /* Embed Watch Content */,
+				ECA3654CC31DAA4D41523FA4 /* [CP] Embed Pods Frameworks */,
+				FB81A4C7E9CD9033AD8E30B4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,6 +256,7 @@
 			buildPhases = (
 				D2343D4C1C4CFABB00697D6E /* Resources */,
 				D2343D721C4CFABB00697D6E /* Embed App Extensions */,
+				EB57898B2F96E2029257DD9E /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,9 +272,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2343D6F1C4CFABB00697D6E /* Build configuration list for PBXNativeTarget "WatchOSDemoApp WatchKit Extension" */;
 			buildPhases = (
+				39A855B4E4A7A81F96DE9B9F /* [CP] Check Pods Manifest.lock */,
 				D2343D591C4CFABB00697D6E /* Sources */,
 				D2343D5A1C4CFABB00697D6E /* Frameworks */,
 				D2343D5B1C4CFABB00697D6E /* Resources */,
+				F6D1084E1A0AF535455D5132 /* [CP] Embed Pods Frameworks */,
+				9A01C958BAE7D640EDB7C94A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,6 +314,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -314,6 +361,125 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26B753A2038DBB008532070B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchOSDemoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39A855B4E4A7A81F96DE9B9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchOSDemoApp WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A01C958BAE7D640EDB7C94A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchOSDemoApp WatchKit Extension/Pods-WatchOSDemoApp WatchKit Extension-resources.sh",
+				"${PODS_ROOT}/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation/Resources/Localizations.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Localizations.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatchOSDemoApp WatchKit Extension/Pods-WatchOSDemoApp WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECA3654CC31DAA4D41523FA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchOSDemoApp/Pods-WatchOSDemoApp-frameworks.sh",
+				"${PODS_ROOT}/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation/Frameworks/IBMMobileFirstPlatformFoundation.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBMMobileFirstPlatformFoundation.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatchOSDemoApp/Pods-WatchOSDemoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6D1084E1A0AF535455D5132 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchOSDemoApp WatchKit Extension/Pods-WatchOSDemoApp WatchKit Extension-frameworks.sh",
+				"${PODS_ROOT}/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation/Frameworks/IBMMobileFirstPlatformFoundationWatchOS.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBMMobileFirstPlatformFoundationWatchOS.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatchOSDemoApp WatchKit Extension/Pods-WatchOSDemoApp WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB81A4C7E9CD9033AD8E30B4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchOSDemoApp/Pods-WatchOSDemoApp-resources.sh",
+				"${PODS_ROOT}/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation/Resources/Localizations.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Localizations.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatchOSDemoApp/Pods-WatchOSDemoApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2343D381C4CFABA00697D6E /* Sources */ = {
@@ -408,6 +574,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -444,12 +611,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		D2343D701C4CFABB00697D6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CC7DDCFBD01B59B9BAFCD24 /* Pods-WatchOSDemoApp WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "WatchOSDemoApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -464,6 +633,7 @@
 		};
 		D2343D711C4CFABB00697D6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FCC60D85A4D0D79EC1C2760 /* Pods-WatchOSDemoApp WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "WatchOSDemoApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -510,23 +680,27 @@
 		};
 		D2343D781C4CFABB00697D6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72AE23359AA80065F8B9DE26 /* Pods-WatchOSDemoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WatchOSDemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.worklight.WatchOSDemoApp;
 				PRODUCT_NAME = WatchOSDemoApp;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		D2343D791C4CFABB00697D6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECF9EDE996DE305AA9237928 /* Pods-WatchOSDemoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WatchOSDemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.worklight.WatchOSDemoApp;
 				PRODUCT_NAME = WatchOSDemoApp;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

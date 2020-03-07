@@ -21,13 +21,13 @@ class LoginViewController : UIViewController {
     
     var challengeHandler : MyLoginChallengeHandler!
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if (firstTime) {
-            self.errorMsg.hidden = true
+            self.errorMsg.isHidden = true
         }
         else {
-            self.errorMsg.hidden = false
+            self.errorMsg.isHidden = false
         }
     }
     
@@ -36,7 +36,7 @@ class LoginViewController : UIViewController {
         challengeAnswer["user"] = self.username.text
         challengeAnswer["password"] = self.password.text
         self.challengeHandler.submitChallengeAnswer(challengeAnswer)
-        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
     

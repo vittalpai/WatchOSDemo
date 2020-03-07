@@ -20,7 +20,7 @@ class PinCodeInterfaceController : WKInterfaceController {
     var pinCode = ""
     var digitsCounter = 0
     
-    override func awakeWithContext(context: AnyObject?) {
+    override func awake(withContext context: Any?)  {
         
         
         let contextDictionary : [String : AnyObject] = context as! [String : AnyObject]
@@ -49,55 +49,55 @@ class PinCodeInterfaceController : WKInterfaceController {
     }
     
     @IBAction func button1Pressed() {
-        buttonPressed(1)
+        buttonPressed(number: 1)
     }
     
     @IBAction func button2Pressed() {
-        buttonPressed(2)
+        buttonPressed(number: 2)
     }
     
     @IBAction func button3Pressed() {
-        buttonPressed(3)
+        buttonPressed(number: 3)
     }
     
     @IBAction func button4Pressed() {
-        buttonPressed(4)
+        buttonPressed(number: 4)
     }
     
     @IBAction func button5Pressed() {
-        buttonPressed(5)
+        buttonPressed(number: 5)
     }
     
     @IBAction func button6Pressed() {
-        buttonPressed(6)
+        buttonPressed(number: 6)
     }
     
     @IBAction func button7Pressed() {
-        buttonPressed(7)
+        buttonPressed(number: 7)
     }
     
     @IBAction func button8Pressed() {
-        buttonPressed(8)
+        buttonPressed(number: 8)
     }
     
     @IBAction func button9Pressed() {
-        buttonPressed(9)
+        buttonPressed(number: 9)
     }
     
     @IBAction func button0Pressed() {
-        buttonPressed(0)
+        buttonPressed(number: 0)
     }
     
     func buttonPressed(number:Int) {
         pinCode = pinCode + String(number)
-        digitsCounter++
+        digitsCounter = digitsCounter + 1
     }
     
     @IBAction func sendPinCode() {
         var challengeAnswer : Dictionary<String, String>  = [String : String]()
         challengeAnswer["pinCode"] = pinCode
         self.challengeHandler.submitChallengeAnswer(challengeAnswer)
-        self.popController()
+        self.pop()
         self.didSendPinCode = true
     }
     

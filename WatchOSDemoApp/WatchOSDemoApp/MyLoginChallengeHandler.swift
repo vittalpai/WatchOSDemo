@@ -20,22 +20,22 @@ class MyLoginChallengeHandler : SecurityCheckChallengeHandler {
         super.init(securityCheck: "usernamePassword")
     }
     
-    override func handleSuccess(success: [NSObject : AnyObject]!) {
+    override func handleSuccess(_ success: [AnyHashable : Any]!) {
         NSLog("Challenge success");
         isFirstTime = true
-        self.vc.navigationController?.popViewControllerAnimated(true)
+        self.vc.navigationController?.popViewController(animated: true)
     }
     
-    override func handleFailure(failure: [NSObject : AnyObject]!) {
+    override func handleFailure(_ failure: [AnyHashable : Any]!) {
         NSLog("Challenge failed");
     }
     
-    override func handleChallenge(challenge: [NSObject : AnyObject]!) {
+    override func handleChallenge(_ challenge: [AnyHashable : Any]!) {
         NSLog("A login form should appear");
-        let loginViewController : LoginViewController = self.vc.storyboard!.instantiateViewControllerWithIdentifier("LoginViewController") as! LoginViewController
+        let loginViewController : LoginViewController = self.vc.storyboard!.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
         loginViewController.firstTime = isFirstTime
         loginViewController.challengeHandler = self
-        self.vc.presentViewController(loginViewController, animated: true, completion: nil)
+        self.vc.present(loginViewController, animated: true, completion: nil)
         isFirstTime = false
     }
     
