@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< Updated upstream
 		D22D7F151C7A02CD000BE63D /* MyRemoteDisableChallengeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D7F141C7A02CD000BE63D /* MyRemoteDisableChallengeHandler.swift */; };
+=======
+		0C502910241376DF00E61E03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C50290F241376DE00E61E03 /* Assets.xcassets */; };
+>>>>>>> Stashed changes
 		D2343D401C4CFABA00697D6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2343D3F1C4CFABA00697D6E /* AppDelegate.swift */; };
 		D2343D471C4CFABA00697D6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2343D461C4CFABA00697D6E /* Assets.xcassets */; };
 		D2343D4A1C4CFABB00697D6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2343D481C4CFABB00697D6E /* LaunchScreen.storyboard */; };
@@ -18,12 +22,9 @@
 		D2343D6B1C4CFABB00697D6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2343D6A1C4CFABB00697D6E /* Assets.xcassets */; };
 		D2343D7B1C4CFB1E00697D6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2343D7A1C4CFB1E00697D6E /* ViewController.swift */; };
 		D2343D7D1C4CFB2400697D6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2343D7C1C4CFB2400697D6E /* Main.storyboard */; };
-		D2343D7F1C4CFB2F00697D6E /* MyLoginChallengeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2343D7E1C4CFB2F00697D6E /* MyLoginChallengeHandler.swift */; };
 		D2343D811C4CFB3400697D6E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2343D801C4CFB3400697D6E /* LoginViewController.swift */; };
 		D2343D831C4CFB4100697D6E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2343D821C4CFB4100697D6E /* Interface.storyboard */; };
-		D2343D851C4CFB4A00697D6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2343D841C4CFB4A00697D6E /* Assets.xcassets */; };
 		D2343D871C4CFB5200697D6E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2343D861C4CFB5200697D6E /* InterfaceController.swift */; };
-		D2343D891C4CFB5700697D6E /* MyPinCodeChallengeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2343D881C4CFB5700697D6E /* MyPinCodeChallengeHandler.swift */; };
 		D2343D8B1C4CFB5F00697D6E /* PinCodeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2343D8A1C4CFB5F00697D6E /* PinCodeInterfaceController.swift */; };
 		D2343DB51C4F811D00697D6E /* mfpclient.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2343DB41C4F811D00697D6E /* mfpclient.plist */; };
 		D2343DB61C4F811D00697D6E /* mfpclient.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2343DB41C4F811D00697D6E /* mfpclient.plist */; };
@@ -72,8 +73,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+<<<<<<< Updated upstream
 		D22D7F141C7A02CD000BE63D /* MyRemoteDisableChallengeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRemoteDisableChallengeHandler.swift; sourceTree = "<group>"; };
 		D2343D3C1C4CFABA00697D6E /* WatchOSDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchOSDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+=======
+		0C50290F241376DE00E61E03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2343D3C1C4CFABA00697D6E /* ModResorts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModResorts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+>>>>>>> Stashed changes
 		D2343D3F1C4CFABA00697D6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2343D461C4CFABA00697D6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2343D491C4CFABB00697D6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -88,12 +94,9 @@
 		D2343D6C1C4CFABB00697D6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2343D7A1C4CFB1E00697D6E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D2343D7C1C4CFB2400697D6E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		D2343D7E1C4CFB2F00697D6E /* MyLoginChallengeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLoginChallengeHandler.swift; sourceTree = "<group>"; };
 		D2343D801C4CFB3400697D6E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D2343D821C4CFB4100697D6E /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
-		D2343D841C4CFB4A00697D6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2343D861C4CFB5200697D6E /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		D2343D881C4CFB5700697D6E /* MyPinCodeChallengeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPinCodeChallengeHandler.swift; sourceTree = "<group>"; };
 		D2343D8A1C4CFB5F00697D6E /* PinCodeInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeInterfaceController.swift; sourceTree = "<group>"; };
 		D2343DB41C4F811D00697D6E /* mfpclient.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mfpclient.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,12 +113,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< Updated upstream
+=======
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB57898B2F96E2029257DD9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+>>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< Updated upstream
+=======
+		BABF246CEBD545C8DAE01A18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+>>>>>>> Stashed changes
 		D2343D331C4CFABA00697D6E = {
 			isa = PBXGroup;
 			children = (
@@ -124,13 +147,17 @@
 				D2343D521C4CFABB00697D6E /* WatchOSDemoApp WatchKit App */,
 				D2343D611C4CFABB00697D6E /* WatchOSDemoApp WatchKit Extension */,
 				D2343D3D1C4CFABA00697D6E /* Products */,
+<<<<<<< Updated upstream
+=======
+				BABF246CEBD545C8DAE01A18 /* Pods */,
+>>>>>>> Stashed changes
 			);
 			sourceTree = "<group>";
 		};
 		D2343D3D1C4CFABA00697D6E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2343D3C1C4CFABA00697D6E /* WatchOSDemoApp.app */,
+				D2343D3C1C4CFABA00697D6E /* ModResorts.app */,
 				D2343D4E1C4CFABB00697D6E /* WatchOSDemoApp.app */,
 				D2343D5D1C4CFABB00697D6E /* WatchOSDemoApp.appex */,
 			);
@@ -142,7 +169,6 @@
 			children = (
 				D2343D3F1C4CFABA00697D6E /* AppDelegate.swift */,
 				D2343D7A1C4CFB1E00697D6E /* ViewController.swift */,
-				D2343D7E1C4CFB2F00697D6E /* MyLoginChallengeHandler.swift */,
 				D2343D801C4CFB3400697D6E /* LoginViewController.swift */,
 				D2343D7C1C4CFB2400697D6E /* Main.storyboard */,
 				D2343D461C4CFABA00697D6E /* Assets.xcassets */,
@@ -155,8 +181,8 @@
 		D2343D521C4CFABB00697D6E /* WatchOSDemoApp WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				0C50290F241376DE00E61E03 /* Assets.xcassets */,
 				D2343D821C4CFB4100697D6E /* Interface.storyboard */,
-				D2343D841C4CFB4A00697D6E /* Assets.xcassets */,
 				D2343D581C4CFABB00697D6E /* Info.plist */,
 			);
 			path = "WatchOSDemoApp WatchKit App";
@@ -166,9 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				D2343D861C4CFB5200697D6E /* InterfaceController.swift */,
-				D2343D881C4CFB5700697D6E /* MyPinCodeChallengeHandler.swift */,
 				D2343D8A1C4CFB5F00697D6E /* PinCodeInterfaceController.swift */,
-				D22D7F141C7A02CD000BE63D /* MyRemoteDisableChallengeHandler.swift */,
 				D2343D661C4CFABB00697D6E /* ExtensionDelegate.swift */,
 				D2343D681C4CFABB00697D6E /* NotificationController.swift */,
 				D2343D6A1C4CFABB00697D6E /* Assets.xcassets */,
@@ -205,7 +229,7 @@
 			);
 			name = WatchOSDemoApp;
 			productName = WatchOSDemoApp;
-			productReference = D2343D3C1C4CFABA00697D6E /* WatchOSDemoApp.app */;
+			productReference = D2343D3C1C4CFABA00697D6E /* ModResorts.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D2343D4D1C4CFABB00697D6E /* WatchOSDemoApp WatchKit App */ = {
@@ -299,7 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2343D851C4CFB4A00697D6E /* Assets.xcassets in Resources */,
+				0C502910241376DF00E61E03 /* Assets.xcassets in Resources */,
 				D2343D831C4CFB4100697D6E /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,7 +345,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2343D811C4CFB3400697D6E /* LoginViewController.swift in Sources */,
-				D2343D7F1C4CFB2F00697D6E /* MyLoginChallengeHandler.swift in Sources */,
 				D2343D7B1C4CFB1E00697D6E /* ViewController.swift in Sources */,
 				D2343D401C4CFABA00697D6E /* AppDelegate.swift in Sources */,
 			);
@@ -334,9 +357,7 @@
 				D2343D871C4CFB5200697D6E /* InterfaceController.swift in Sources */,
 				D2343D691C4CFABB00697D6E /* NotificationController.swift in Sources */,
 				D2343D8B1C4CFB5F00697D6E /* PinCodeInterfaceController.swift in Sources */,
-				D22D7F151C7A02CD000BE63D /* MyRemoteDisableChallengeHandler.swift in Sources */,
 				D2343D671C4CFABB00697D6E /* ExtensionDelegate.swift in Sources */,
-				D2343D891C4CFB5700697D6E /* MyPinCodeChallengeHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,7 +536,12 @@
 				INFOPLIST_FILE = WatchOSDemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.worklight.WatchOSDemoApp;
+<<<<<<< Updated upstream
 				PRODUCT_NAME = WatchOSDemoApp;
+=======
+				PRODUCT_NAME = ModResorts;
+				SWIFT_VERSION = 4.0;
+>>>>>>> Stashed changes
 			};
 			name = Debug;
 		};
@@ -526,7 +552,12 @@
 				INFOPLIST_FILE = WatchOSDemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.worklight.WatchOSDemoApp;
+<<<<<<< Updated upstream
 				PRODUCT_NAME = WatchOSDemoApp;
+=======
+				PRODUCT_NAME = ModResorts;
+				SWIFT_VERSION = 4.0;
+>>>>>>> Stashed changes
 			};
 			name = Release;
 		};

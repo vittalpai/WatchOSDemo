@@ -7,13 +7,10 @@
 //
 
 import UIKit
-import IBMMobileFirstPlatformFoundation
-
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        WLClient.sharedInstance().registerChallengeHandler(MyLoginChallengeHandler(vc: self))
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,6 +20,7 @@ class ViewController: UIViewController {
 
         
     @IBAction func balance(sender: AnyObject) {
+<<<<<<< Updated upstream
         let address : String = "/adapters/bankAdapter/view/balance";
         let url : NSURL = NSURL(string: address)!
         let request : WLResourceRequest = WLResourceRequest(URL: url, method: WLHttpMethodGet);
@@ -54,6 +52,18 @@ class ViewController: UIViewController {
             
             self.presentViewController(adapterResponseAlert, animated: true, completion: nil)
         }
+=======
+            
+            //self.hideActivityIndicator()
+            
+            let adapterResponseAlert : UIAlertController = UIAlertController(title: title, message: "success", preferredStyle: UIAlertControllerStyle.alert)
+            let ok : UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (UIAlertAction) -> Void in
+                adapterResponseAlert.dismiss(animated: true, completion: nil)
+            })
+            adapterResponseAlert.addAction(ok)
+            
+            self.present(adapterResponseAlert, animated: true, completion: nil)
+>>>>>>> Stashed changes
 
     }
     

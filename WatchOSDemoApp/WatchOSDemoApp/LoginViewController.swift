@@ -19,9 +19,13 @@ class LoginViewController : UIViewController {
     
     var firstTime : Bool = true
     
+<<<<<<< Updated upstream
     var challengeHandler : MyLoginChallengeHandler!
     
     override func viewWillAppear(animated: Bool) {
+=======
+    override func viewWillAppear(_ animated: Bool) {
+>>>>>>> Stashed changes
         super.viewWillAppear(animated)
         if (firstTime) {
             self.errorMsg.hidden = true
@@ -32,11 +36,15 @@ class LoginViewController : UIViewController {
     }
     
     @IBAction func login(sender: AnyObject) {
+<<<<<<< Updated upstream
         var challengeAnswer : Dictionary<String, String>  = [String : String]()
         challengeAnswer["user"] = self.username.text
         challengeAnswer["password"] = self.password.text
         self.challengeHandler.submitChallengeAnswer(challengeAnswer)
         self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+=======
+     //   self.vc.navigationController.popViewController(animated: true)
+>>>>>>> Stashed changes
     }
     
     

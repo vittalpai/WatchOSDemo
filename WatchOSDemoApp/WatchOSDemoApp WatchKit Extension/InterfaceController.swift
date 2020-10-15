@@ -8,13 +8,11 @@
 
 import WatchKit
 import Foundation
-import IBMMobileFirstPlatformFoundationWatchOS
 
 class InterfaceController: WKInterfaceController {
     
     var isRemoteDisabled = false
     var pinCodeScreenShouldBeDisplayed = false
-    var pinCodeChallengeHandler : MyPinCodeChallengeHandler?
     
     @IBOutlet var activityIndicatorImage: WKInterfaceImage!
     
@@ -28,10 +26,15 @@ class InterfaceController: WKInterfaceController {
         self.activityIndicatorImage.setHidden(true)
     }
     
+<<<<<<< Updated upstream
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         WLClient.sharedInstance().registerChallengeHandler(MyPinCodeChallengeHandler(ic: self))
         WLClient.sharedInstance().registerChallengeHandler(MyRemoteDisableChallengeHandler(ic:self))
+=======
+    override func awake(withContext context: Any?)  {
+        super.awake(withContext: context)
+>>>>>>> Stashed changes
     
         activityIndicatorImage.setHidden(true)
         // Configure interface objects here.
@@ -48,6 +51,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func balance() {
+<<<<<<< Updated upstream
         let address : String = "/adapters/bankAdapter/view/balance";
         let url : NSURL = NSURL(string: address)!
         let request : WLResourceRequest = WLResourceRequest(URL: url, method: WLHttpMethodGet);
@@ -83,6 +87,31 @@ class InterfaceController: WKInterfaceController {
                 self.isRemoteDisabled = false;
             }
         }
+=======
+       
+        self.showActivityIndicator()
+        //sleep(5)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { // Change `2.0` to the desired number of var var title = "Balance";
+            
+        let title = "Mod Resorts";
+        let message = "Your Booking ID 92138XZA for BLR TO SFO on 9th Mar 2020 is confirmed.\n\n  Check-in Timings : 9:00 AM IST"
+        let act : WKAlertAction = WKAlertAction(title: "OK", style: WKAlertActionStyle.default, handler: { () -> Void in
+                       
+                   })
+                   let actions : [WKAlertAction] = [act];
+                   
+                   self.hideActivityIndicator()
+                   
+                   //If remote disabled, we showed error message already in MyRemoteDisableChallengeHandler
+                   if (!self.isRemoteDisabled) {
+                       self.presentAlert(withTitle: title, message: message, preferredStyle: WKAlertControllerStyle.alert, actions: actions)
+                   }
+                   else {
+                       self.isRemoteDisabled = false;
+                   }
+        }
+        
+>>>>>>> Stashed changes
         
     }
     
